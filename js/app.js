@@ -5,14 +5,24 @@ function getInputValue(firstId, secondId){
     return multiplicationValue;
 }
 
-document.getElementById("triangle-btn").addEventListener("click", function(){
-    const value = getInputValue("triangle-base", "triangle-height")
-    const triangleArea = parseFloat((value * 0.5).toFixed(2));
-
-    const title = document.getElementById("triangle").innerText;
-    const ul = document.getElementById("area-container");
+function getArea(titleId, container, triangleArea){
+    const title = document.getElementById(titleId).innerText;
+    const ul = document.getElementById(container);
     const li = document.createElement("li");
     li.classList.add("list-decimal", "my-2");
     li.innerHTML ="" + title + " = " + triangleArea + " " + "cm<sup>2</sup>" + `<button class="ms-2 bg-sky-500 px-3 py-1 text-white rounded-lg hover:bg-sky-700">convert to m</button> `;
     ul.appendChild(li);
+}
+
+document.getElementById("triangle-btn").addEventListener("click", function(){
+    const value = getInputValue("triangle-base", "triangle-height")
+    const triangleArea = parseFloat((value * 0.5).toFixed(2));
+
+    getArea("triangle", "area-container", triangleArea);
+    // const title = document.getElementById("triangle").innerText;
+    // const ul = document.getElementById("area-container");
+    // const li = document.createElement("li");
+    // li.classList.add("list-decimal", "my-2");
+    // li.innerHTML ="" + title + " = " + triangleArea + " " + "cm<sup>2</sup>" + `<button class="ms-2 bg-sky-500 px-3 py-1 text-white rounded-lg hover:bg-sky-700">convert to m</button> `;
+    // ul.appendChild(li);
 })
