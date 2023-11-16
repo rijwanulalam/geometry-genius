@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="w-11/12 mx-auto">
+    <header class="my-7">
+        <div class="flex justify-between items-center bg-sky-200/50 py-4 px-2 md:px-10">
+            <h3 class="text-2xl"><span class="font-bold text-4xl">Interactive</span> <br> Geometry Genius</h3>
+            <button class="font-bold text-xl bg-sky-500 px-8 py-2 text-white rounded-lg hover:bg-sky-700">Blog</button>
+        </div>
+    </header>
+    <main class="my-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-10">
+            <div class="p-10 border rounded-lg order-2 md:order-1">
+                <img class="mb-5 mx-auto" src="images/triangle.png" alt="">
+                <h3 class="text-2xl font-medium">Triangle</h3>
+                <p class="my-2">Area (A) = 0.5 X b X h</p>
+                <div class="flex my-2">
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="base" placeholder="base">
+                        <label for="">cm</label>
+                    </div>
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="height" placeholder="height">
+                        <label for="">cm</label>
+                    </div>
+                </div>
+                <button class="font-bold text-xl bg-sky-500 px-8 py-2 text-white rounded-lg hover:bg-sky-700 w-full" >Calculate</button>
+            </div>
+            <div class="p-10 border rounded-lg order-3 md:order-2">
+                <img class="mb-5 mx-auto" src="images/rectangle.png" alt="">
+                <h3 class="text-2xl font-medium">Rectangle</h3>
+                <p class="my-2">Area (A) = w X h</p>
+                <div class="flex my-2">
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="width" placeholder="width">
+                        <label for="">cm</label>
+                    </div>
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="height" placeholder="height">
+                        <label for="">cm</label>
+                    </div>
+                </div>
+                <button class="font-bold text-xl bg-sky-500 px-8 py-2 text-white rounded-lg hover:bg-sky-700 w-full" >Calculate</button>
+            </div>
+            <div class="p-10 border rounded-lg order-4 md:order-3">
+                <img class="mb-5 mx-auto" src="images/parallelogram.png" alt="">
+                <h3 class="text-2xl font-medium">Parallelogram</h3>
+                <p class="my-2">Area (A) = b X h</p>
+                <div class="flex my-2">
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="base" placeholder="base">
+                        <label for="">cm</label>
+                    </div>
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="height" placeholder="height">
+                        <label for="">cm</label>
+                    </div>
+                </div>
+                <button class="font-bold text-xl bg-sky-500 px-8 py-2 text-white rounded-lg hover:bg-sky-700 w-full" >Calculate</button>
+            </div>
+            <div class="p-10 border rounded-lg order-1 md:order-4">
+                <h3 class="text-xl font-medium underline underline-offset-1">Area Calculation</h3>
+                
+            </div>
+            <div class="p-10 border rounded-lg order-5 md:order-5">
+                <img class="mb-5 mx-auto" src="images/rhombus.png" alt="">
+                <h3 class="text-2xl font-medium">Rhombus</h3>
+                <p class="my-2">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                <div class="flex my-2">
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="base" placeholder="d1">
+                        <label for="">cm</label>
+                    </div>
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="height" placeholder="d2">
+                        <label for="">cm</label>
+                    </div>
+                </div>
+                <button class="font-bold text-xl bg-sky-500 px-8 py-2 text-white rounded-lg hover:bg-sky-700 w-full" >Calculate</button>
+            </div>
+            <div class="p-10 border rounded-lg order-6 md:order-6">
+                <img class="mb-5 mx-auto" src="images/pentagon.png" alt="">
+                <h3 class="text-2xl font-medium">Pentagon</h3>
+                <p class="my-2">Area (A) = 0.5 X p X b</p>
+                <div class="flex my-2">
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="base" placeholder="one side">
+                        <label for="">cm</label>
+                    </div>
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="height" placeholder="d">
+                        <label for="">cm</label>
+                    </div>
+                </div>
+                <button class="font-bold text-xl bg-sky-500 px-8 py-2 text-white rounded-lg hover:bg-sky-700 w-full" >Calculate</button>
+            </div>
+            <div class="p-10 border rounded-lg order-7 md:order-7">
+                <img class="mb-5 mx-auto" src="images/ellipse.png" alt="">
+                <h3 class="text-2xl font-medium">Ellipse</h3>
+                <p class="my-2">Area (A) = <span class="text-xl">&pi;</span>ab</p>
+                <div class="flex my-2">
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="base" placeholder="x axis">
+                        <label for="">cm</label>
+                    </div>
+                    <div>
+                        <input class="w-1/2 bg-slate-300 py-1 px-2 rounded-md" type="text" name="" id="height" placeholder="y axis">
+                        <label for="">cm</label>
+                    </div>
+                </div>
+                <button class="font-bold text-xl bg-sky-500 px-8 py-2 text-white rounded-lg hover:bg-sky-700 w-full" >Calculate</button>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
