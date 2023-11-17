@@ -24,8 +24,9 @@ function getArea(titleId, container, triangleArea) {
     " = " +
     triangleArea +
     " " +
-    "cm<sup>2</sup>" +
-    `<button class="ms-2 bg-sky-500 px-3 py-1 text-white rounded-lg hover:bg-sky-700 convert-to-m">convert to m<sup>2</sup></button> `;
+    "cm<sup>2</sup>" ;
+    // +
+    // `<button class="ms-2 bg-sky-500 px-3 py-1 text-white rounded-lg hover:bg-sky-700 convert-to-m">convert to m<sup>2</sup></button> `;
   ul.appendChild(li);
 }
 
