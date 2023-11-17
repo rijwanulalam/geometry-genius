@@ -1,0 +1,53 @@
+<!--  What is DOM and what is the purpose of DOM?
+
+ How will you select HTML elements using DOM? Name the DOM methods.
+
+ What is event bubble?
+
+ What is a callback function and why will you use it? 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-10/12 mx-auto my-5">
+    <main>
+        <div class="my-5">
+            <h3 class="text-2xl font-bold my-2">1. What is DOM and what is the purpose of DOM?</h3>
+            <p class="text-xl">DOM is a Document Object Model & Programming Interface for HTML objects, properties, methods and events
+                to get, set, change, add or delete HTML elements. DOM helps us to get the html object as like an array
+                and we can access HTML objects as like an array.</p>
+        </div>
+        <div class="my-5">
+            <h3 class="text-2xl font-bold my-2">2. How will you select HTML elements using DOM? Name the DOM methods.
+            </h3>
+            <p class="text-xl">We can select HTML elements by their tag name, class name, id name. <br> Such as :
+                <li class="list-decimal font-medium">getElementsByClassName</li>
+                <li class="list-decimal font-medium">getElementsById</li>
+                <li class="list-decimal font-medium">getElementsByTagName</li>
+                <li class="list-decimal font-medium">querySelectorAll</li>
+                <li class="list-decimal font-medium">querySelector</li>
+            </p>
+        </div>
+        <div class="my-5">
+            <h3 class="text-2xl font-bold my-2">3. What is event bubble?</h3>
+            <img class="h-64 w-80" src="images/event.png" alt="">
+            <p class="text-xl">Event Bubbling is a concept in the DOM. It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element. We can stop bubble up using <span class="font-medium">stopPropagation()</span></p>
+        </div>
+        <div class="my-5">
+            <h3 class="text-2xl font-bold my-2">4. What is a callback function and why will you use it?</h3>
+            <p class="text-xl">A callback function is a function that passed into another function as an argument. <br> <br> <code>function print(callback){ <br>  
+                callback();<br>
+            }</code> <br> <br>
+            this function takes another function as a parameter and calls it inside and we call it a “callback”. So a function that is passed to another function as a parameter is a callback function.</p>
+        </div>
+    </main>
+</body>
+
+</html>

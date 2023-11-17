@@ -81,6 +81,10 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
   getArea("ellipse", "area-container", ellipseArea);
 });
 
+document.getElementById("blog-btn").addEventListener("click", function(){
+    window.location.href = "blog.html";
+})
+
 // const convertButtons = document.getElementsByClassName("convert-to-m");
 // console.log(convertButtons)
 // for(const convertButton of convertButtons){
