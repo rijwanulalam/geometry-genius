@@ -85,11 +85,7 @@ document.getElementById("blog-btn").addEventListener("click", function(){
     window.location.href = "blog.html";
 })
 
-// const convertButtons = document.getElementsByClassName("convert-to-m");
-// console.log(convertButtons)
-// for(const convertButton of convertButtons){
-//     console.log(convertButton)
-// }
+
 
 // background color
 function random_bg_color() {
@@ -109,3 +105,11 @@ for(const card of cards){
         card.style.backgroundColor = random_bg_color();
     })
 }
+
+// const convertButtons = document.querySelectorAll('.convert-to-m');
+
+// convertButtons.forEach(convertButton => {
+//   convertButton.addEventListener('click', function(event) {
+//     console.log('box clicked', event);
+//   });
+// });
