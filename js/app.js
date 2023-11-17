@@ -90,3 +90,22 @@ document.getElementById("blog-btn").addEventListener("click", function(){
 // for(const convertButton of convertButtons){
 //     console.log(convertButton)
 // }
+
+// background color
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+//  console.log(bgColor);
+  
+    // document.body.style.background = bgColor;
+    return bgColor;
+    }
+// console.log(random_bg_color());
+const cards = document.getElementsByClassName("bg");
+for(const card of cards){
+    card.addEventListener("mouseover", function(){
+        card.style.backgroundColor = random_bg_color();
+    })
+}
